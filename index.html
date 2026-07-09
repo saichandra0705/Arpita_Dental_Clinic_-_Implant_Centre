@@ -1,0 +1,891 @@
+<!-- D:\Sai Nilesh\Clinic_project\index.html -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arpita Dental Clinic & Implant Centre | Best Dentist in Bidar, Karnataka</title>
+  <meta name="description" content="Arpita Dental Clinic & Implant Centre in Bidar, Karnataka — offering painless single-visit root canal, dental implants, clear aligners, braces, smile design & teeth whitening. 4.9★ rated by 116+ patients. Call 078925 81667." />
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="styles.css" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            serif: ['Playfair Display', 'serif'],
+            sans: ['DM Sans', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="font-sans bg-white text-blue-950 antialiased">
+
+  <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-transparent">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-18 py-3">
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-full bg-blue-600 flex items-center justify-center shadow-md">
+            <svg viewBox="0 0 24 24" fill="none" class="w-6 h-6" stroke="white" stroke-width="1.8">
+              <path d="M12 2C9 2 6 4 6 7c0 2 1 3.5 2 5l1 5c.3 1.5 1.5 2 2 2s1.7-.5 2-2l1-5c1-1.5 2-3 2-5 0-3-3-5-4-5z" />
+              <path d="M9 7c0-1.5 1.3-3 3-3" />
+            </svg>
+          </div>
+          <div>
+            <p id="nav-brand-title" class="font-bold text-lg leading-tight font-serif text-white transition-colors">Arpita Dental</p>
+            <p id="nav-brand-subtitle" class="text-xs leading-tight text-blue-200 transition-colors">Clinic & Implant Centre</p>
+          </div>
+        </div>
+        <div class="hidden md:flex items-center gap-8" id="desktop-links">
+          <a href="#home" class="nav-link text-sm font-medium text-white/90 hover:text-white transition-colors">Home</a>
+          <a href="#services" class="nav-link text-sm font-medium text-white/90 hover:text-white transition-colors">Services</a>
+          <a href="#about" class="nav-link text-sm font-medium text-white/90 hover:text-white transition-colors">About Us</a>
+          <a href="#reviews" class="nav-link text-sm font-medium text-white/90 hover:text-white transition-colors">Reviews</a>
+          <a href="#contact" class="nav-link text-sm font-medium text-white/90 hover:text-white transition-colors">Contact</a>
+        </div>
+        <div class="hidden md:flex items-center gap-3">
+          <a href="tel:07892581667" class="flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-full text-sm font-semibold transition-all pulse-btn">
+            <i data-lucide="phone" class="w-4 h-4"></i> 078925 81667 / 996441 6060
+          </a>
+        </div>
+        <button id="mobile-menu-btn" class="md:hidden p-2 rounded-lg text-white transition-colors">
+          <i data-lucide="menu"></i>
+        </button>
+      </div>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-blue-100 shadow-xl">
+      <div class="px-4 py-4 space-y-1">
+        <a href="#home" class="block py-3 px-4 text-gray-700 hover:text-blue-700 hover:bg-blue-50 rounded-lg font-medium transition-colors mobile-link">Home</a>
+        <a href="#services" class="block py-3 px-4 text-gray-700 hover:text-blue-700 hover:bg-blue-50 rounded-lg font-medium transition-colors mobile-link">Services</a>
+        <a href="#about" class="block py-3 px-4 text-gray-700 hover:text-blue-700 hover:bg-blue-50 rounded-lg font-medium transition-colors mobile-link">About Us</a>
+        <a href="#reviews" class="block py-3 px-4 text-gray-700 hover:text-blue-700 hover:bg-blue-50 rounded-lg font-medium transition-colors mobile-link">Reviews</a>
+        <a href="#contact" class="block py-3 px-4 text-gray-700 hover:text-blue-700 hover:bg-blue-50 rounded-lg font-medium transition-colors mobile-link">Contact</a>
+        <a href="tel:07892581667" class="flex items-center gap-2 mt-3 bg-blue-600 text-white px-4 py-3 rounded-xl font-semibold justify-center">
+          <i data-lucide="phone" class="w-4 h-4"></i> Call: 078925 81667
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Removed 'hero-gradient' class and added explicit Tailwind blue gradient background -->
+  <section id="home" class="min-h-screen relative overflow-hidden bg-gradient-to-br from-blue-900 via-blue-800 to-blue-950">
+    <div class="absolute top-20 left-10 w-64 h-64 rounded-full bg-white/5 blur-3xl"></div>
+    <div class="absolute bottom-20 right-10 w-96 h-96 rounded-full bg-blue-400/10 blur-3xl"></div>
+    <div class="absolute top-1/2 left-1/2 w-48 h-48 rounded-full bg-blue-300/5 blur-2xl"></div>
+
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-28 pb-16">
+      <div class="grid lg:grid-cols-2 gap-12 items-start">
+        
+        <div class="space-y-6">
+          <div class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-4 py-2">
+            <div class="flex text-amber-500">
+              <i data-lucide="star" class="w-3 h-3 fill-current"></i><i data-lucide="star" class="w-3 h-3 fill-current"></i><i data-lucide="star" class="w-3 h-3 fill-current"></i><i data-lucide="star" class="w-3 h-3 fill-current"></i><i data-lucide="star" class="w-3 h-3 fill-current"></i>
+            </div>
+            <span class="text-white text-sm font-medium">4.9/5 · 116+ Google Reviews</span>
+          </div>
+          <h1 class="font-serif text-5xl lg:text-6xl font-bold text-white leading-tight">
+            Your Smile, <span class="block text-blue-300">Our Priority</span>
+          </h1>
+          <p class="text-blue-100 text-lg leading-relaxed max-w-lg">
+            Bidar's most trusted dental clinic offering <strong class="text-white">painless single-visit RCT</strong>, advanced implants, clear aligners, and complete smile transformations — offering almost all procedures with painless techniques and experience.
+          </p>
+          <div class="grid grid-cols-2 gap-3">
+            <div class="flex items-center gap-2"><i data-lucide="check-circle" class="w-4 h-4 text-blue-300 flex-shrink-0"></i><span class="text-white/90 text-sm">Single-Visit Root Canal</span></div>
+            <div class="flex items-center gap-2"><i data-lucide="check-circle" class="w-4 h-4 text-blue-300 flex-shrink-0"></i><span class="text-white/90 text-sm">Painless Procedures</span></div>
+            <div class="flex items-center gap-2"><i data-lucide="check-circle" class="w-4 h-4 text-blue-300 flex-shrink-0"></i><span class="text-white/90 text-sm">Advanced Technology</span></div>
+            <div class="flex items-center gap-2"><i data-lucide="check-circle" class="w-4 h-4 text-blue-300 flex-shrink-0"></i><span class="text-white/90 text-sm">Flexible Timings</span></div>
+          </div>
+          <div class="relative rounded-2xl overflow-hidden shadow-2xl border border-white/10 mt-4">
+            <img src="images/hero-clinic.jpg" alt="Modern Arpita Dental Clinic Interior - Bidar" class="w-full h-72 object-cover" />
+            <div class="absolute inset-0 bg-gradient-to-t from-blue-950/60 to-transparent"></div>
+            <div class="absolute bottom-4 left-4 flex items-center gap-2 bg-white/90 backdrop-blur-sm rounded-xl px-3 py-2">
+              <i data-lucide="calendar" class="w-4 h-4 text-blue-700"></i>
+              <span class="text-blue-800 text-sm font-semibold">Open Daily · 10AM–12PM & 6PM–9PM</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-3xl shadow-2xl p-6 lg:p-8 border border-blue-100">
+          <div class="mb-5">
+            <h2 class="font-serif text-2xl font-bold text-blue-900">Book Your Appointment</h2>
+            <p class="text-gray-500 text-sm mt-1">for a Healthier, Brighter Smile</p>
+            <div class="h-1 w-16 bg-blue-500 rounded-full mt-3"></div>
+          </div>
+          
+          <div id="form-success" class="hidden flex-col items-center justify-center py-12 text-center">
+            <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-4">
+              <i data-lucide="check-circle" class="w-8 h-8 text-blue-600"></i>
+            </div>
+            <h3 class="text-xl font-bold text-blue-800 mb-2">Appointment Requested!</h3>
+            <p class="text-gray-500 text-sm">We'll call you shortly to confirm. Thank you!</p>
+          </div>
+
+          <form id="appointment-form" class="space-y-3">
+            <div class="grid grid-cols-2 gap-3">
+              <div>
+                <label class="block text-xs font-semibold text-gray-600 mb-1">First Name <span class="text-red-500">*</span></label>
+                <input type="text" required placeholder="First name" class="form-input" />
+              </div>
+              <div>
+                <label class="block text-xs font-semibold text-gray-600 mb-1">Last Name <span class="text-red-500">*</span></label>
+                <input type="text" required placeholder="Last name" class="form-input" />
+              </div>
+            </div>
+            <div class="grid grid-cols-2 gap-3">
+              <div>
+                <label class="block text-xs font-semibold text-gray-600 mb-1">Phone Number <span class="text-red-500">*</span></label>
+                <input type="tel" required placeholder="10-digit number" class="form-input" />
+              </div>
+              <div>
+                <label class="block text-xs font-semibold text-gray-600 mb-1">Alt. Number</label>
+                <input type="tel" placeholder="Optional" class="form-input" />
+              </div>
+            </div>
+            <div>
+              <label class="block text-xs font-semibold text-gray-600 mb-1">Branch <span class="text-red-500">*</span></label>
+              <select required class="form-input">
+                <option value="">Select Branch</option>
+                <option value="Devi Colony, Bidar">Devi Colony, Bidar</option>
+              </select>
+            </div>
+            <div>
+              <label class="block text-xs font-semibold text-gray-600 mb-1">Treatment <span class="text-red-500">*</span></label>
+              <select required class="form-input">
+                <option value="">Select Treatment</option>
+                <option value="Root Canal Treatment">Root Canal Treatment</option>
+                <option value="Dental Implants">Dental Implants</option>
+                <option value="Clear Aligners">Clear Aligners</option>
+                <option value="Smile Design">Smile Design</option>
+                <option value="General Consultation">General Consultation</option>
+              </select>
+            </div>
+            <div class="grid grid-cols-2 gap-3">
+              <div>
+                <label class="block text-xs font-semibold text-gray-600 mb-1">Choose Time <span class="text-red-500">*</span></label>
+                <select required class="form-input">
+                  <option value="">Select Time</option>
+                  <option value="10:00 AM">10:00 AM</option>
+                  <option value="11:00 AM">11:00 AM</option>
+                  <option value="6:00 PM">6:00 PM</option>
+                  <option value="7:00 PM">7:00 PM</option>
+                </select>
+              </div>
+              <div>
+                <label class="block text-xs font-semibold text-gray-600 mb-1">Choose Date <span class="text-red-500">*</span></label>
+                <input type="date" required class="form-input" />
+              </div>
+            </div>
+            <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3.5 rounded-xl transition-all duration-200 text-base mt-2 shadow-lg shadow-blue-200 pulse-btn">
+              Confirm Appointment →
+            </button>
+            <p class="text-center text-xs text-gray-400">Or call us directly: <a href="tel:07892581667" class="text-blue-600 font-semibold">078925 81667 / 996441 6060</a></p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="services" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-14">
+        <span class="inline-block bg-blue-50 text-blue-700 text-sm font-semibold px-4 py-1.5 rounded-full mb-4 border border-blue-200">Our Specialties</span>
+        <h2 class="font-serif text-4xl lg:text-5xl font-bold text-blue-950 mb-4">World-Class Dental Services</h2>
+        <p class="text-gray-500 max-w-2xl mx-auto text-lg">From routine check-ups to full smile transformations — Arpita Dental delivers <strong class="text-blue-700">All Comprehensive Dental Treatments</strong> with cutting-edge technology and experienced specialists in Bidar.</p>
+
+<div id="services-grid5" class="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 mt-10">
+  <div class="scroll-reveal card-hover bg-white rounded-2xl border border-gray-100 shadow-md overflow-hidden group">
+    <div class="relative h-44 overflow-hidden">
+      <img src="images/root-canal.jpg" alt="Root Canal Treatment" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+      <div class="absolute inset-0 bg-gradient-to-t from-blue-950/70 to-transparent"></div>
+      <span class="absolute top-3 right-3 bg-amber-400 text-amber-900 text-xs font-bold px-2.5 py-1 rounded-full">Most Popular</span>
+      <div class="absolute bottom-3 left-3 text-2xl z-10">🦷</div>
+    </div>
+    <div class="p-5">
+      <h3 class="font-bold text-blue-900 text-lg mb-0.5">Root Canal Treatment</h3>
+      <p class="text-blue-600 text-xs font-semibold mb-2">Single-Visit Painless RCT</p>
+      <p class="text-gray-500 text-sm leading-relaxed mb-3">Our advanced single-visit root canal therapy eliminates infection and saves your natural tooth — completely painless with modern anaesthesia and rotary endodontics.</p>
+      <div class="flex flex-wrap gap-1.5">
+        <span class="bg-blue-50 text-blue-700 text-xs px-2 py-0.5 rounded-full border border-blue-100">Painless</span>
+        <span class="bg-blue-50 text-blue-700 text-xs px-2 py-0.5 rounded-full border border-blue-100">Same Day</span>
+        <span class="bg-blue-50 text-blue-700 text-xs px-2 py-0.5 rounded-full border border-blue-100">Tooth Saving</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="scroll-reveal card-hover bg-white rounded-2xl border border-gray-100 shadow-md overflow-hidden group">
+    <div class="relative h-44 overflow-hidden">
+      <img src="images/glowdent-implants.jpg" alt="Dental Implants" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+      <div class="absolute inset-0 bg-gradient-to-t from-blue-950/70 to-transparent"></div>
+      <span class="absolute top-3 right-3 bg-amber-400 text-amber-900 text-xs font-bold px-2.5 py-1 rounded-full">Advanced</span>
+      <div class="absolute bottom-3 left-3 text-2xl z-10">⚙️</div>
+    </div>
+    <div class="p-5">
+      <h3 class="font-bold text-blue-900 text-lg mb-0.5">Dental Implants</h3>
+      <p class="text-blue-600 text-xs font-semibold mb-2">Permanent Tooth Replacement</p>
+      <p class="text-gray-500 text-sm leading-relaxed mb-3">Replace missing teeth with titanium implants that look, feel, and function like natural teeth. Patients travel from across Karnataka for our expert implant solutions.</p>
+      <div class="flex flex-wrap gap-1.5">
+        <span class="bg-blue-50 text-blue-700 text-xs px-2 py-0.5 rounded-full border border-blue-100">Permanent</span>
+        <span class="bg-blue-50 text-blue-700 text-xs px-2 py-0.5 rounded-full border border-blue-100">Natural Feel</span>
+        <span class="bg-blue-50 text-blue-700 text-xs px-2 py-0.5 rounded-full border border-blue-100">Titanium</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="scroll-reveal card-hover bg-white rounded-2xl border border-gray-100 shadow-md overflow-hidden group">
+    <div class="relative h-44 overflow-hidden">
+      <img src="images/clear-aligners.jpg" alt="Clear Aligners" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+      <div class="absolute inset-0 bg-gradient-to-t from-blue-950/70 to-transparent"></div>
+      <span class="absolute top-3 right-3 bg-amber-400 text-amber-900 text-xs font-bold px-2.5 py-1 rounded-full">Trending</span>
+      <div class="absolute bottom-3 left-3 text-2xl z-10">✨</div>
+    </div>
+    <div class="p-5">
+      <h3 class="font-bold text-blue-900 text-lg mb-0.5">Clear Aligners</h3>
+      <p class="text-blue-600 text-xs font-semibold mb-2">Invisible Orthodontics</p>
+      <p class="text-gray-500 text-sm leading-relaxed mb-3">Straighten your teeth discreetly with custom-fitted clear aligners. No metal, no discomfort — just a confident smile at every stage of treatment.</p>
+      <div class="flex flex-wrap gap-1.5">
+        <span class="bg-blue-50 text-blue-700 text-xs px-2 py-0.5 rounded-full border border-blue-100">Invisible</span>
+        <span class="bg-blue-50 text-blue-700 text-xs px-2 py-0.5 rounded-full border border-blue-100">Removable</span>
+        <span class="bg-blue-50 text-blue-700 text-xs px-2 py-0.5 rounded-full border border-blue-100">Comfortable</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="scroll-reveal card-hover bg-white rounded-2xl border border-gray-100 shadow-md overflow-hidden group">
+    <div class="relative h-44 overflow-hidden">
+      <img src="images/teeth-fixing.jpg" alt="Teeth Fixing" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+      <div class="absolute inset-0 bg-gradient-to-t from-blue-950/70 to-transparent"></div>
+      <div class="absolute bottom-3 left-3 text-2xl z-10">🔧</div>
+    </div>
+    <div class="p-5">
+      <h3 class="font-bold text-blue-900 text-lg mb-0.5">Teeth Fixing</h3>
+      <p class="text-blue-600 text-xs font-semibold mb-2">Crowns, Bridges & Veneers</p>
+      <p class="text-gray-500 text-sm leading-relaxed mb-3">Restore broken, chipped, or damaged teeth with precision crowns, bridges, and veneers crafted for a perfect fit and natural appearance.</p>
+      <div class="flex flex-wrap gap-1.5">
+        <span class="bg-blue-50 text-blue-700 text-xs px-2 py-0.5 rounded-full border border-blue-100">Crowns</span>
+        <span class="bg-blue-50 text-blue-700 text-xs px-2 py-0.5 rounded-full border border-blue-100">Bridges</span>
+        <span class="bg-blue-50 text-blue-700 text-xs px-2 py-0.5 rounded-full border border-blue-100">Veneers</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="scroll-reveal card-hover bg-white rounded-2xl border border-gray-100 shadow-md overflow-hidden group">
+    <div class="relative h-44 overflow-hidden">
+      <img src="images/smile-design.jpg" alt="Smile Design" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+      <div class="absolute inset-0 bg-gradient-to-t from-blue-950/70 to-transparent"></div>
+      <span class="absolute top-3 right-3 bg-amber-400 text-amber-900 text-xs font-bold px-2.5 py-1 rounded-full">Premium</span>
+      <div class="absolute bottom-3 left-3 text-2xl z-10">😁</div>
+    </div>
+    <div class="p-5">
+      <h3 class="font-bold text-blue-900 text-lg mb-0.5">Smile Design</h3>
+      <p class="text-blue-600 text-xs font-semibold mb-2">Complete Smile Makeover</p>
+      <p class="text-gray-500 text-sm leading-relaxed mb-3">Transform your smile with a personalized makeover combining whitening, veneers, contouring, and alignment — designed to complement your unique facial features.</p>
+      <div class="flex flex-wrap gap-1.5">
+        <span class="bg-blue-50 text-blue-700 text-xs px-2 py-0.5 rounded-full border border-blue-100">Makeover</span>
+        <span class="bg-blue-50 text-blue-700 text-xs px-2 py-0.5 rounded-full border border-blue-100">Aesthetic</span>
+        <span class="bg-blue-50 text-blue-700 text-xs px-2 py-0.5 rounded-full border border-blue-100">Personalized</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="scroll-reveal card-hover bg-white rounded-2xl border border-gray-100 shadow-md overflow-hidden group">
+    <div class="relative h-44 overflow-hidden">
+      <img src="images/mosdent-braces.jpg" alt="Braces" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+      <div class="absolute inset-0 bg-gradient-to-t from-blue-950/70 to-transparent"></div>
+      <div class="absolute bottom-3 left-3 text-2xl z-10">🔩</div>
+    </div>
+    <div class="p-5">
+      <h3 class="font-bold text-blue-900 text-lg mb-0.5">Braces</h3>
+      <p class="text-blue-600 text-xs font-semibold mb-2">Metal & Ceramic Orthodontics</p>
+      <p class="text-gray-500 text-sm leading-relaxed mb-3">Correct misaligned teeth and bite issues with traditional metal or discreet ceramic braces. Our experienced orthodontist ensures precise, lasting results.</p>
+      <div class="flex flex-wrap gap-1.5">
+        <span class="bg-blue-50 text-blue-700 text-xs px-2 py-0.5 rounded-full border border-blue-100">Metal</span>
+        <span class="bg-blue-50 text-blue-700 text-xs px-2 py-0.5 rounded-full border border-blue-100">Ceramic</span>
+        <span class="bg-blue-50 text-blue-700 text-xs px-2 py-0.5 rounded-full border border-blue-100">Precise</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="scroll-reveal card-hover bg-white rounded-2xl border border-gray-100 shadow-md overflow-hidden group">
+    <div class="relative h-44 overflow-hidden">
+      <img src="images/specialcare-whitening.jpg" alt="Teeth Whitening" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+      <div class="absolute inset-0 bg-gradient-to-t from-blue-950/70 to-transparent"></div>
+      <span class="absolute top-3 right-3 bg-amber-400 text-amber-900 text-xs font-bold px-2.5 py-1 rounded-full">Quick</span>
+      <div class="absolute bottom-3 left-3 text-2xl z-10">⭐</div>
+    </div>
+    <div class="p-5">
+      <h3 class="font-bold text-blue-900 text-lg mb-0.5">Teeth Whitening</h3>
+      <p class="text-blue-600 text-xs font-semibold mb-2">Professional Bleaching</p>
+      <p class="text-gray-500 text-sm leading-relaxed mb-3">Achieve a dazzling, movie-star smile with professional-grade teeth whitening that removes years of stains safely and effectively in just one session.</p>
+      <div class="flex flex-wrap gap-1.5">
+        <span class="bg-blue-50 text-blue-700 text-xs px-2 py-0.5 rounded-full border border-blue-100">Bright</span>
+        <span class="bg-blue-50 text-blue-700 text-xs px-2 py-0.5 rounded-full border border-blue-100">Safe</span>
+        <span class="bg-blue-50 text-blue-700 text-xs px-2 py-0.5 rounded-full border border-blue-100">Instant Results</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="scroll-reveal card-hover bg-white rounded-2xl border border-gray-100 shadow-md overflow-hidden group">
+    <div class="relative h-44 overflow-hidden">
+      <img src="images/isppd-pediatric.jpg" alt="Pediatric Dentistry" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+      <div class="absolute inset-0 bg-gradient-to-t from-blue-950/70 to-transparent"></div>
+      <span class="absolute top-3 right-3 bg-amber-400 text-amber-900 text-xs font-bold px-2.5 py-1 rounded-full">Kid Friendly</span>
+      <div class="absolute bottom-3 left-3 text-2xl z-10">👶</div>
+    </div>
+    <div class="p-5">
+      <h3 class="font-bold text-blue-900 text-lg mb-0.5">Pediatric Dentistry</h3>
+      <p class="text-blue-600 text-xs font-semibold mb-2">Gentle Care for Children</p>
+      <p class="text-gray-500 text-sm leading-relaxed mb-3">Specialized dental care for children in a warm, friendly environment. We make every visit fun and anxiety-free, building healthy habits from an early age.</p>
+      <div class="flex flex-wrap gap-1.5">
+        <span class="bg-blue-50 text-blue-700 text-xs px-2 py-0.5 rounded-full border border-blue-100">Children</span>
+        <span class="bg-blue-50 text-blue-700 text-xs px-2 py-0.5 rounded-full border border-blue-100">Gentle</span>
+        <span class="bg-blue-50 text-blue-700 text-xs px-2 py-0.5 rounded-full border border-blue-100">Preventive</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="scroll-reveal card-hover bg-white rounded-2xl border border-gray-100 shadow-md overflow-hidden group">
+    <div class="relative h-44 overflow-hidden">
+      <img src="images/drbvreedy-laser.jpg" alt="Laser Dentistry" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+      <div class="absolute inset-0 bg-gradient-to-t from-blue-950/70 to-transparent"></div>
+      <span class="absolute top-3 right-3 bg-amber-400 text-amber-900 text-xs font-bold px-2.5 py-1 rounded-full">Hi-Tech</span>
+      <div class="absolute bottom-3 left-3 text-2xl z-10">🔬</div>
+    </div>
+    <div class="p-5">
+      <h3 class="font-bold text-blue-900 text-lg mb-0.5">Laser Dentistry</h3>
+      <p class="text-blue-600 text-xs font-semibold mb-2">Precision Laser Treatments</p>
+      <p class="text-gray-500 text-sm leading-relaxed mb-3">Advanced laser technology for gum treatments, cavity detection, and soft tissue procedures — faster healing, minimal discomfort, and superior precision.</p>
+      <div class="flex flex-wrap gap-1.5">
+        <span class="bg-blue-50 text-blue-700 text-xs px-2 py-0.5 rounded-full border border-blue-100">Laser</span>
+        <span class="bg-blue-50 text-blue-700 text-xs px-2 py-0.5 rounded-full border border-blue-100">Precise</span>
+        <span class="bg-blue-50 text-blue-700 text-xs px-2 py-0.5 rounded-full border border-blue-100">Fast Healing</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="scroll-reveal card-hover bg-white rounded-2xl border border-gray-100 shadow-md overflow-hidden group">
+    <div class="relative h-44 overflow-hidden">
+      <img src="images/smileavenue-extraction.jpg" alt="Tooth Extraction" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+      <div class="absolute inset-0 bg-gradient-to-t from-blue-950/70 to-transparent"></div>
+      <div class="absolute bottom-3 left-3 text-2xl z-10">🩺</div>
+    </div>
+    <div class="p-5">
+      <h3 class="font-bold text-blue-900 text-lg mb-0.5">Tooth Extraction</h3>
+      <p class="text-blue-600 text-xs font-semibold mb-2">Painless & Safe Removal</p>
+      <p class="text-gray-500 text-sm leading-relaxed mb-3">Simple and surgical tooth extractions performed with utmost care and precision. Our painless technique ensures a comfortable experience and quick recovery.</p>
+      <div class="flex flex-wrap gap-1.5">
+        <span class="bg-blue-50 text-blue-700 text-xs px-2 py-0.5 rounded-full border border-blue-100">Painless</span>
+        <span class="bg-blue-50 text-blue-700 text-xs px-2 py-0.5 rounded-full border border-blue-100">Safe</span>
+        <span class="bg-blue-50 text-blue-700 text-xs px-2 py-0.5 rounded-full border border-blue-100">Quick Recovery</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="scroll-reveal card-hover bg-white rounded-2xl border border-gray-100 shadow-md overflow-hidden group">
+    <div class="relative h-44 overflow-hidden">
+      <img src="images/estrellamountain-gums.jpg" alt="Gum Treatment" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+      <div class="absolute inset-0 bg-gradient-to-t from-blue-950/70 to-transparent"></div>
+      <div class="absolute bottom-3 left-3 text-2xl z-10">🌿</div>
+    </div>
+    <div class="p-5">
+      <h3 class="font-bold text-blue-900 text-lg mb-0.5">Gum Treatment</h3>
+      <p class="text-blue-600 text-xs font-semibold mb-2">Periodontal Care</p>
+      <p class="text-gray-500 text-sm leading-relaxed mb-3">Comprehensive treatment for gum disease, bleeding gums, and periodontitis. We restore gum health with deep cleaning, scaling, root planing, and laser therapy.</p>
+      <div class="flex flex-wrap gap-1.5">
+        <span class="bg-blue-50 text-blue-700 text-xs px-2 py-0.5 rounded-full border border-blue-100">Scaling</span>
+        <span class="bg-blue-50 text-blue-700 text-xs px-2 py-0.5 rounded-full border border-blue-100">Deep Clean</span>
+        <span class="bg-blue-50 text-blue-700 text-xs px-2 py-0.5 rounded-full border border-blue-100">Gum Health</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="scroll-reveal card-hover bg-white rounded-2xl border border-gray-100 shadow-md overflow-hidden group">
+    <div class="relative h-44 overflow-hidden">
+      <img src="images/andreyeng-fullmouth.jpg" alt="Full Mouth Rehabilitation" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+      <div class="absolute inset-0 bg-gradient-to-t from-blue-950/70 to-transparent"></div>
+      <span class="absolute top-3 right-3 bg-amber-400 text-amber-900 text-xs font-bold px-2.5 py-1 rounded-full">Comprehensive</span>
+      <div class="absolute bottom-3 left-3 text-2xl z-10">🏆</div>
+    </div>
+    <div class="p-5">
+      <h3 class="font-bold text-blue-900 text-lg mb-0.5">Full Mouth Rehabilitation</h3>
+      <p class="text-blue-600 text-xs font-semibold mb-2">Complete Oral Restoration</p>
+      <p class="text-gray-500 text-sm leading-relaxed mb-3">Comprehensive full-mouth reconstruction for patients with multiple dental issues — combining implants, crowns, bridges, and cosmetic treatments for a complete transformation.</p>
+      <div class="flex flex-wrap gap-1.5">
+        <span class="bg-blue-50 text-blue-700 text-xs px-2 py-0.5 rounded-full border border-blue-100">Full Mouth</span>
+        <span class="bg-blue-50 text-blue-700 text-xs px-2 py-0.5 rounded-full border border-blue-100">Restoration</span>
+        <span class="bg-blue-50 text-blue-700 text-xs px-2 py-0.5 rounded-full border border-blue-100">Transform</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="scroll-reveal card-hover bg-white rounded-2xl border border-gray-100 shadow-md overflow-hidden group">
+    <div class="relative h-44 overflow-hidden">
+      <img src="images/newway-dentures.jpg" alt="Dentures" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+      <div class="absolute inset-0 bg-gradient-to-t from-blue-950/70 to-transparent"></div>
+      <div class="absolute bottom-3 left-3 text-2xl z-10">😊</div>
+    </div>
+    <div class="p-5">
+      <h3 class="font-bold text-blue-900 text-lg mb-0.5">Dentures</h3>
+      <p class="text-blue-600 text-xs font-semibold mb-2">Complete & Partial Dentures</p>
+      <p class="text-gray-500 text-sm leading-relaxed mb-3">Custom-crafted complete and partial dentures that restore your smile and chewing function. Natural-looking, comfortable, and precisely fitted for everyday confidence.</p>
+      <div class="flex flex-wrap gap-1.5">
+        <span class="bg-blue-50 text-blue-700 text-xs px-2 py-0.5 rounded-full border border-blue-100">Complete</span>
+        <span class="bg-blue-50 text-blue-700 text-xs px-2 py-0.5 rounded-full border border-blue-100">Partial</span>
+        <span class="bg-blue-50 text-blue-700 text-xs px-2 py-0.5 rounded-full border border-blue-100">Custom Fit</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="scroll-reveal card-hover bg-white rounded-2xl border border-gray-100 shadow-md overflow-hidden group">
+    <div class="relative h-44 overflow-hidden">
+      <img src="images/adalya-sensitivity.jpg" alt="Teeth Sensitivity Treatment" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+      <div class="absolute inset-0 bg-gradient-to-t from-blue-950/70 to-transparent"></div>
+      <div class="absolute bottom-3 left-3 text-2xl z-10">❄️</div>
+    </div>
+    <div class="p-5">
+      <h3 class="font-bold text-blue-900 text-lg mb-0.5">Teeth Sensitivity Treatment</h3>
+      <p class="text-blue-600 text-xs font-semibold mb-2">Relief from Sharp Pain</p>
+      <p class="text-gray-500 text-sm leading-relaxed mb-3">Targeted treatment for sensitive teeth caused by enamel erosion, exposed roots, or worn fillings. Get lasting relief and enjoy hot and cold foods without discomfort.</p>
+      <div class="flex flex-wrap gap-1.5">
+        <span class="bg-blue-50 text-blue-700 text-xs px-2 py-0.5 rounded-full border border-blue-100">Sensitivity</span>
+        <span class="bg-blue-50 text-blue-700 text-xs px-2 py-0.5 rounded-full border border-blue-100">Relief</span>
+        <span class="bg-blue-50 text-blue-700 text-xs px-2 py-0.5 rounded-full border border-blue-100">Enamel Care</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="scroll-reveal card-hover bg-white rounded-2xl border border-gray-100 shadow-md overflow-hidden group">
+    <div class="relative h-44 overflow-hidden">
+      <img src="images/stockcake-xray.jpg" alt="Dental X-Ray & Diagnosis" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+      <div class="absolute inset-0 bg-gradient-to-t from-blue-950/70 to-transparent"></div>
+      <span class="absolute top-3 right-3 bg-amber-400 text-amber-900 text-xs font-bold px-2.5 py-1 rounded-full">Digital</span>
+      <div class="absolute bottom-3 left-3 text-2xl z-10">📷</div>
+    </div>
+    <div class="p-5">
+      <h3 class="font-bold text-blue-900 text-lg mb-0.5">Dental X-Ray & Diagnosis</h3>
+      <p class="text-blue-600 text-xs font-semibold mb-2">Advanced Digital Imaging</p>
+      <p class="text-gray-500 text-sm leading-relaxed mb-3">State-of-the-art digital X-rays and OPG scans for accurate, low-radiation diagnosis. Early detection of hidden problems ensures timely and effective treatment.</p>
+      <div class="flex flex-wrap gap-1.5">
+        <span class="bg-blue-50 text-blue-700 text-xs px-2 py-0.5 rounded-full border border-blue-100">Digital X-Ray</span>
+        <span class="bg-blue-50 text-blue-700 text-xs px-2 py-0.5 rounded-full border border-blue-100">OPG</span>
+        <span class="bg-blue-50 text-blue-700 text-xs px-2 py-0.5 rounded-full border border-blue-100">Accurate</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="scroll-reveal bg-gradient-to-br from-blue-700 to-blue-900 rounded-2xl p-6 flex flex-col justify-between text-white shadow-xl">
+    <div>
+      <p class="text-blue-300 text-sm font-semibold mb-2">Not sure which treatment?</p>
+      <h3 class="font-serif text-2xl font-bold mb-3">Get a Free Consultation</h3>
+      <p class="text-blue-100 text-sm leading-relaxed">
+        Our experienced dental specialists will evaluate your needs and recommend the best treatment plan from All Comprehensive Dental Treatments.
+      </p>
+    </div>
+    <a href="#home" class="mt-6 bg-white text-blue-800 font-bold py-3 rounded-xl text-center hover:bg-blue-50 transition-colors block">
+      Book Free Consult →
+    </a>
+  </div>
+</div>
+    </div>
+  </section>
+
+  <section class="py-20 bg-gradient-to-br from-blue-950 to-blue-800 relative overflow-hidden">
+    <div class="absolute inset-0 opacity-10">
+      <div class="absolute top-0 left-0 w-72 h-72 rounded-full bg-blue-400 blur-3xl"></div>
+      <div class="absolute bottom-0 right-0 w-96 h-96 rounded-full bg-blue-300 blur-3xl"></div>
+    </div>
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-14">
+        <span class="inline-block bg-white/10 text-blue-200 text-sm font-semibold px-4 py-1.5 rounded-full mb-4 border border-white/20">Why Choose Us</span>
+        <h2 class="font-serif text-4xl lg:text-5xl font-bold text-white mb-4">Why Arpita Dental?</h2>
+        <p class="text-blue-200 max-w-2xl mx-auto text-lg">Bidar's most preferred dental clinic — where advanced care meets genuine compassion.</p>
+      </div>
+
+      <div id="why-us-grid" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="scroll-reveal bg-white/10 backdrop-blur-sm border border-white/15 rounded-2xl p-6 hover:bg-white/15 transition-all duration-300 group">
+    <div class="w-12 h-12 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+      <i data-lucide="cpu"></i>
+    </div>
+    <h3 class="font-bold text-white text-lg mb-2">State-of-the-Art Technology</h3>
+    <p class="text-blue-200 text-sm leading-relaxed">We invest in the latest dental technology — digital X-rays, rotary endodontics, laser dentistry, and CAD/CAM systems — ensuring precise, comfortable, and efficient treatments.</p>
+  </div>
+
+  <div class="scroll-reveal bg-white/10 backdrop-blur-sm border border-white/15 rounded-2xl p-6 hover:bg-white/15 transition-all duration-300 group">
+    <div class="w-12 h-12 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+      <i data-lucide="user-check"></i>
+    </div>
+    <h3 class="font-bold text-white text-lg mb-2">Experienced Specialists</h3>
+    <p class="text-blue-200 text-sm leading-relaxed">Our highly qualified dental team — led by Dr. Sachin and Dr. Soumya — brings years of specialized expertise in implants, orthodontics, cosmetic dentistry, and endodontics.</p>
+  </div>
+
+  <div class="scroll-reveal bg-white/10 backdrop-blur-sm border border-white/15 rounded-2xl p-6 hover:bg-white/15 transition-all duration-300 group">
+    <div class="w-12 h-12 rounded-xl bg-green-50 text-green-600 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+      <i data-lucide="shield-check"></i>
+    </div>
+    <h3 class="font-bold text-white text-lg mb-2">Patient-First Approach</h3>
+    <p class="text-blue-200 text-sm leading-relaxed">Every treatment plan is tailored to your unique needs. We prioritize your comfort, explain each step clearly, and ensure you feel confident and cared for throughout.</p>
+  </div>
+
+  <div class="scroll-reveal bg-white/10 backdrop-blur-sm border border-white/15 rounded-2xl p-6 hover:bg-white/15 transition-all duration-300 group">
+    <div class="w-12 h-12 rounded-xl bg-purple-50 text-purple-600 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+      <i data-lucide="clock"></i>
+    </div>
+    <h3 class="font-bold text-white text-lg mb-2">Flexible Timings</h3>
+    <p class="text-blue-200 text-sm leading-relaxed">Open daily from 10 AM–12 PM and 6 PM–9 PM, we accommodate your busy schedule. No more missing work for dental appointments — we work around your life.</p>
+  </div>
+
+  <div class="scroll-reveal bg-white/10 backdrop-blur-sm border border-white/15 rounded-2xl p-6 hover:bg-white/15 transition-all duration-300 group">
+    <div class="w-12 h-12 rounded-xl bg-amber-50 text-amber-600 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+      <i data-lucide="dollar-sign"></i>
+    </div>
+    <h3 class="font-bold text-white text-lg mb-2">Transparent & Affordable Pricing</h3>
+    <p class="text-blue-200 text-sm leading-relaxed">Quality dental care shouldn't break the bank. We offer competitive, transparent pricing with no hidden costs — and flexible payment options for comprehensive treatments.</p>
+  </div>
+
+  <div class="scroll-reveal bg-white/10 backdrop-blur-sm border border-white/15 rounded-2xl p-6 hover:bg-white/15 transition-all duration-300 group">
+    <div class="w-12 h-12 rounded-xl bg-rose-50 text-rose-600 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+      <i data-lucide="award"></i>
+    </div>
+    <h3 class="font-bold text-white text-lg mb-2">4.9★ Trusted by 116+ Patients</h3>
+    <p class="text-blue-200 text-sm leading-relaxed">With 116+ five-star Google reviews and patients travelling from across Karnataka, Arpita Dental has earned Bidar's highest trust rating in dental care.</p>
+  </div>
+      </div>
+
+      <div class="mt-14 grid grid-cols-2 md:grid-cols-4 gap-6">
+        <div class="text-center"><p class="font-serif text-4xl font-bold text-white mb-1">116+</p><p class="text-blue-300 text-sm">Happy Patients</p></div>
+        <div class="text-center"><p class="font-serif text-4xl font-bold text-white mb-1">4.9★</p><p class="text-blue-300 text-sm">Google Rating</p></div>
+        <div class="text-center"><p class="font-serif text-4xl font-bold text-white mb-1">ALL</p><p class="text-blue-300 text-sm">Treatments Offered</p></div>
+        <div class="text-center"><p class="font-serif text-4xl font-bold text-white mb-1">10+</p><p class="text-blue-300 text-sm">Years of Excellence</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-14">
+        <span class="inline-block bg-blue-50 text-blue-700 text-sm font-semibold px-4 py-1.5 rounded-full mb-4 border border-blue-200">About Us</span>
+        <h2 class="font-serif text-4xl lg:text-5xl font-bold text-blue-950 mb-4">Bidar's Most Trusted Dental Clinic</h2>
+        <p class="text-gray-500 max-w-2xl mx-auto text-lg">Arpita Dental Clinic & Implant Centre is Bidar's premier destination for advanced, affordable, and compassionate dental care.</p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-6 mb-16">
+        <div class="scroll-reveal bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl p-8 border border-blue-200">
+          <div class="w-12 h-12 bg-blue-600 rounded-xl flex items-center justify-center mb-5"><i data-lucide="target" class="text-white"></i></div>
+          <h3 class="font-serif text-2xl font-bold text-blue-900 mb-3">Our Mission</h3>
+          <p class="text-blue-800 leading-relaxed">To deliver world-class dental care to every patient in Bidar and surrounding areas — making advanced treatments accessible, affordable, and completely painless. We are committed to transforming smiles and improving oral health with integrity, expertise, and compassion.</p>
+        </div>
+        <div class="scroll-reveal bg-gradient-to-br from-blue-900 to-blue-950 rounded-2xl p-8 text-white">
+          <div class="w-12 h-12 bg-blue-400 rounded-xl flex items-center justify-center mb-5"><i data-lucide="eye" class="text-blue-900"></i></div>
+          <h3 class="font-serif text-2xl font-bold mb-3">Our Vision</h3>
+          <p class="text-blue-200 leading-relaxed">To be Karnataka's most trusted dental institution — recognized for clinical excellence, patient satisfaction, and the relentless adoption of modern dental technologies. We envision a Bidar where every smile reflects confidence and health.</p>
+        </div>
+      </div>
+
+      <div class="mb-10">
+        <h3 class="font-serif text-3xl font-bold text-blue-950 text-center mb-2">Meet Our Expert Doctors</h3>
+        <p class="text-center text-gray-500 mb-10">Qualified, experienced, and dedicated to your smile</p>
+        <div class="grid md:grid-cols-2 gap-8">
+          <div class="scroll-reveal flex gap-5 bg-white rounded-2xl border border-gray-100 shadow-lg p-6 card-hover">
+            <div class="flex-shrink-0">
+              <div class="w-24 h-24 rounded-2xl overflow-hidden border-2 border-blue-200">
+                <img src="images/doctor1.jpg" alt="Dr. Sachin" class="w-full h-full object-cover" />
+              </div>
+            </div>
+            <div>
+              <div class="flex items-center gap-2 mb-1">
+                <i data-lucide="stethoscope" class="w-4 h-4 text-blue-600"></i>
+                <span class="text-blue-600 text-xs font-semibold uppercase tracking-wide">Lead Implantologist</span>
+              </div>
+              <h4 class="font-serif text-xl font-bold text-blue-950 mb-1">Dr. Sachin</h4>
+              <p class="text-gray-500 text-sm leading-relaxed">Specialist in dental implants, single-visit root canal therapy, and advanced restorative dentistry. Dr. Sachin is known for his painless technique and precision approach, having successfully treated hundreds of complex implant cases across Karnataka.</p>
+              <div class="flex flex-wrap gap-2 mt-3">
+                <span class="bg-blue-50 text-blue-700 text-xs px-2.5 py-1 rounded-full border border-blue-100">Implants</span>
+                <span class="bg-blue-50 text-blue-700 text-xs px-2.5 py-1 rounded-full border border-blue-100">RCT</span>
+                <span class="bg-blue-50 text-blue-700 text-xs px-2.5 py-1 rounded-full border border-blue-100">Restorative</span>
+              </div>
+            </div>
+          </div>
+          <div class="scroll-reveal flex gap-5 bg-white rounded-2xl border border-gray-100 shadow-lg p-6 card-hover">
+            <div class="flex-shrink-0">
+              <div class="w-24 h-24 rounded-2xl overflow-hidden border-2 border-blue-200">
+                <img src="images/doctor2.jpg" alt="Dr. Soumya" class="w-full h-full object-cover" />
+              </div>
+            </div>
+            <div>
+              <div class="flex items-center gap-2 mb-1">
+                <i data-lucide="stethoscope" class="w-4 h-4 text-blue-600"></i>
+                <span class="text-blue-600 text-xs font-semibold uppercase tracking-wide">Orthodontics & Cosmetics</span>
+              </div>
+              <h4 class="font-serif text-xl font-bold text-blue-950 mb-1">Dr. Soumya</h4>
+              <p class="text-gray-500 text-sm leading-relaxed">Expert in orthodontics, clear aligners, smile design, and cosmetic dentistry. Dr. Soumya combines artistic precision with the latest digital smile design technology to craft beautiful, natural-looking smiles that boost confidence.</p>
+              <div class="flex flex-wrap gap-2 mt-3">
+                <span class="bg-blue-50 text-blue-700 text-xs px-2.5 py-1 rounded-full border border-blue-100">Orthodontics</span>
+                <span class="bg-blue-50 text-blue-700 text-xs px-2.5 py-1 rounded-full border border-blue-100">Aligners</span>
+                <span class="bg-blue-50 text-blue-700 text-xs px-2.5 py-1 rounded-full border border-blue-100">Smile Design</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="scroll-reveal bg-gradient-to-r from-blue-50 to-blue-100 rounded-2xl p-8 border border-blue-200 text-center mt-10">
+        <h4 class="font-serif text-2xl font-bold text-blue-900 mb-3">Committed to Modern Technology</h4>
+        <p class="text-blue-800 max-w-3xl mx-auto leading-relaxed mb-6">At Arpita Dental, we believe the best patient outcomes come from combining experienced hands with cutting-edge tools. Our clinic is equipped with digital X-ray systems, rotary endodontic instruments, laser dental equipment, and CAD/CAM technology — ensuring every procedure is safer, faster, and more comfortable.</p>
+        <div class="flex flex-wrap justify-center gap-3">
+          <span class="bg-white text-blue-800 text-sm px-4 py-2 rounded-full border border-blue-300 font-medium shadow-sm">✓ Digital X-Ray</span>
+          <span class="bg-white text-blue-800 text-sm px-4 py-2 rounded-full border border-blue-300 font-medium shadow-sm">✓ Laser Dentistry</span>
+          <span class="bg-white text-blue-800 text-sm px-4 py-2 rounded-full border border-blue-300 font-medium shadow-sm">✓ Rotary Endodontics</span>
+          <span class="bg-white text-blue-800 text-sm px-4 py-2 rounded-full border border-blue-300 font-medium shadow-sm">✓ CAD/CAM</span>
+          <span class="bg-white text-blue-800 text-sm px-4 py-2 rounded-full border border-blue-300 font-medium shadow-sm">✓ Digital Smile Design</span>
+          <span class="bg-white text-blue-800 text-sm px-4 py-2 rounded-full border border-blue-300 font-medium shadow-sm">✓ Painless Anaesthesia</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="reviews" class="py-20 bg-gradient-to-br from-blue-50 to-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center mb-14 flex flex-col items-center">
+        <span class="inline-block bg-blue-100 text-blue-700 text-sm font-semibold px-4 py-1.5 rounded-full mb-4 border border-blue-200">Patient Reviews</span>
+        <h2 class="font-serif text-4xl lg:text-5xl font-bold text-blue-950 mb-4">What Our Patients Say</h2>
+
+        <div class="inline-flex items-center gap-4 bg-white border border-blue-200 rounded-2xl px-6 py-4 shadow-sm mt-4">
+          <div class="text-center">
+            <p class="font-serif text-3xl font-bold text-blue-800">4.9</p>
+            <p class="text-xs text-gray-500">out of 5</p>
+          </div>
+          <div class="w-px h-10 bg-gray-200"></div>
+          <div>
+            <div class="flex gap-0.5 mb-1 text-amber-500">
+              <i data-lucide="star" class="w-4 h-4 fill-current border-none"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-current border-none"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-current border-none"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-current border-none"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-current border-none"></i>
+            </div>
+            <p class="text-sm text-gray-600 font-medium">116+ Verified Google Reviews</p>
+          </div>
+          <div class="w-px h-10 bg-gray-200"></div>
+          <div class="text-center">
+            <p class="font-bold text-blue-800 text-sm">Google</p>
+            <p class="text-xs text-gray-500">Verified</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="max-w-4xl mx-auto">
+        <div class="relative bg-white rounded-3xl shadow-xl p-8 lg:p-12 border border-blue-100">
+          <i data-lucide="quote" class="w-12 h-12 text-blue-100 absolute top-6 left-8"></i>
+          
+          <div class="relative z-10" id="testimonial-content">
+            <div class="flex gap-1 mb-5 text-amber-500">
+              <i data-lucide="star" class="w-5 h-5 fill-current border-none"></i>
+              <i data-lucide="star" class="w-5 h-5 fill-current border-none"></i>
+              <i data-lucide="star" class="w-5 h-5 fill-current border-none"></i>
+              <i data-lucide="star" class="w-5 h-5 fill-current border-none"></i>
+              <i data-lucide="star" class="w-5 h-5 fill-current border-none"></i>
+            </div>
+            <p class="text-gray-700 text-lg leading-relaxed mb-8 font-light">"Dr. Soumya is absolutely brilliant! My clear aligner treatment has been going so smoothly. She explains every step and the results are already visible. The clinic is modern, clean, and the staff is so friendly. Best dental clinic in Bidar!"</p>
+            <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+              <div class="flex items-center gap-4">
+                <div class="w-12 h-12 bg-purple-500 rounded-full flex items-center justify-center text-white font-bold text-sm flex-shrink-0">PS</div>
+                <div>
+                  <p class="font-bold text-blue-950">Priya Sharma</p>
+                  <p class="text-gray-400 text-sm">Bidar, Karnataka</p>
+                </div>
+              </div>
+              <span class="bg-blue-50 text-blue-700 text-sm px-3 py-1.5 rounded-full border border-blue-200 font-medium">Clear Aligners</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex items-center justify-center gap-4 mt-8">
+          <button id="test-prev" class="w-10 h-10 bg-white border border-blue-200 rounded-full flex items-center justify-center hover:bg-blue-50 shadow-sm transition-colors">
+            <i data-lucide="chevron-left" class="w-5 h-5 text-blue-700"></i>
+          </button>
+          <div class="flex gap-2" id="test-dots">
+            <!-- JS populates this -->
+          </div>
+          <button id="test-next" class="w-10 h-10 bg-white border border-blue-200 rounded-full flex items-center justify-center hover:bg-blue-50 shadow-sm transition-colors">
+            <i data-lucide="chevron-right" class="w-5 h-5 text-blue-700"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-14">
+        <span class="inline-block bg-blue-50 text-blue-700 text-sm font-semibold px-4 py-1.5 rounded-full mb-4 border border-blue-200">Find Us</span>
+        <h2 class="font-serif text-4xl lg:text-5xl font-bold text-blue-950 mb-4">Visit Arpita Dental</h2>
+      </div>
+
+      <div class="grid lg:grid-cols-3 gap-8">
+        <div class="space-y-5">
+          <div class="bg-blue-50 border border-blue-200 rounded-2xl p-6 flex gap-4">
+            <div class="w-10 h-10 bg-blue-600 rounded-xl flex justify-center items-center flex-shrink-0"><i data-lucide="map-pin" class="text-white w-5 h-5"></i></div>
+            <div>
+              <h4 class="font-bold text-blue-900 mb-1">Our Address</h4>
+              <p class="text-blue-800 text-sm leading-relaxed">Near Arien Bakery, Devi Colony,<br/>Bank Colony, Bidar,<br/>Karnataka – 585401</p>
+            </div>
+          </div>
+          <div class="bg-blue-50 border border-blue-200 rounded-2xl p-6 flex gap-4">
+            <div class="w-10 h-10 bg-blue-600 rounded-xl flex justify-center items-center flex-shrink-0"><i data-lucide="clock" class="text-white w-5 h-5"></i></div>
+            <div class="w-full">
+              <h4 class="font-bold text-blue-900 mb-2">Operating Hours</h4>
+              <div class="flex justify-between text-sm mb-1"><span class="text-blue-700">Morning</span><span class="font-semibold text-blue-900">10:00 AM – 12:00 PM</span></div>
+              <div class="flex justify-between text-sm"><span class="text-blue-700">Evening</span><span class="font-semibold text-blue-900">6:00 PM – 9:00 PM</span></div>
+              <div class="mt-2 pt-2 border-t border-blue-200"><span class="text-xs bg-green-100 text-green-700 px-2.5 py-1 rounded-full font-semibold">Open Daily</span></div>
+            </div>
+          </div>
+          <div class="bg-blue-600 rounded-2xl p-6 text-white">
+            <p class="text-blue-200 text-sm">Call for Appointments</p>
+            <p class="font-bold text-2xl mb-4">078925 81667<br/><span class="text-lg">996441 6060</span></p>
+            <a href="tel:07892581667" class="block w-full bg-white text-blue-800 font-bold py-3 rounded-xl text-center hover:bg-blue-50 pulse-btn">📞 Click to Call Now</a>
+          </div>
+        </div>
+        <div class="lg:col-span-2">
+          <div class="rounded-2xl overflow-hidden border border-blue-100 shadow-lg h-full min-h-80">
+            <iframe src="https://maps.google.com/maps?q=Arpita+Dental+Clinic+Bidar&t=&z=15&ie=UTF8&iwloc=&output=embed" width="100%" height="100%" style="border:0; min-height:400px;" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-blue-950 text-white">
+    <div class="bg-gradient-to-r from-blue-600 to-blue-500 py-10">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
+        <div>
+          <h3 class="font-serif text-2xl font-bold text-white mb-1">Ready for a Healthier Smile?</h3>
+          <p class="text-blue-100">Book your appointment today — Bidar's most trusted dental specialists await.</p>
+        </div>
+        <div class="flex gap-3 flex-wrap">
+          <a href="tel:07892581667" class="flex items-center gap-2 bg-white text-blue-800 font-bold px-6 py-3 rounded-xl hover:bg-blue-50 transition-colors pulse-btn">
+            <i data-lucide="phone" class="w-4 h-4"></i> Call Now
+          </a>
+          <a href="#home" class="flex items-center gap-2 bg-blue-800 text-white font-bold px-6 py-3 rounded-xl hover:bg-blue-900 transition-colors border border-blue-600">
+            Book Online →
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-10">
+        
+        <div class="lg:col-span-1">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-10 h-10 rounded-full bg-blue-500 flex items-center justify-center">
+              <svg viewBox="0 0 24 24" fill="none" class="w-6 h-6" stroke="white" stroke-width="1.8">
+                <path d="M12 2C9 2 6 4 6 7c0 2 1 3.5 2 5l1 5c.3 1.5 1.5 2 2 2s1.7-.5 2-2l1-5c1-1.5 2-3 2-5 0-3-3-5-4-5z" />
+                <path d="M9 7c0-1.5 1.3-3 3-3" />
+              </svg>
+            </div>
+            <div>
+              <p class="font-bold text-lg font-serif">Arpita Dental</p>
+              <p class="text-blue-400 text-xs">Clinic & Implant Centre</p>
+            </div>
+          </div>
+          <p class="text-blue-300 text-sm leading-relaxed mb-4">
+            Bidar's most trusted dental clinic for root canal, implants, braces, aligners, and complete smile care.
+          </p>
+          <div class="flex items-center gap-2">
+            <div class="flex text-amber-500">
+              <i data-lucide="star" class="w-3.5 h-3.5 fill-current border-none"></i>
+              <i data-lucide="star" class="w-3.5 h-3.5 fill-current border-none"></i>
+              <i data-lucide="star" class="w-3.5 h-3.5 fill-current border-none"></i>
+              <i data-lucide="star" class="w-3.5 h-3.5 fill-current border-none"></i>
+              <i data-lucide="star" class="w-3.5 h-3.5 fill-current border-none"></i>
+            </div>
+            <span class="text-blue-300 text-sm">4.9 · 116+ Reviews</span>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="font-bold text-white mb-4 text-sm uppercase tracking-wider">Our Services</h4>
+          <ul class="space-y-2">
+            <li><a href="#services" class="text-blue-300 hover:text-white text-sm transition-colors">→ Root Canal Treatment</a></li>
+            <li><a href="#services" class="text-blue-300 hover:text-white text-sm transition-colors">→ Dental Implants</a></li>
+            <li><a href="#services" class="text-blue-300 hover:text-white text-sm transition-colors">→ Clear Aligners</a></li>
+            <li><a href="#services" class="text-blue-300 hover:text-white text-sm transition-colors">→ Teeth Fixing</a></li>
+            <li><a href="#services" class="text-blue-300 hover:text-white text-sm transition-colors">→ Smile Design</a></li>
+            <li><a href="#services" class="text-blue-300 hover:text-white text-sm transition-colors">→ Braces</a></li>
+            <li><a href="#services" class="text-blue-300 hover:text-white text-sm transition-colors">→ Teeth Whitening</a></li>
+            <li><a href="#services" class="text-blue-300 hover:text-white text-sm transition-colors">→ Pediatric Dentistry</a></li>
+            <li><a href="#services" class="text-blue-300 hover:text-white text-sm transition-colors">→ Laser Dentistry</a></li>
+            <li><a href="#services" class="text-blue-300 hover:text-white text-sm transition-colors">→ Tooth Extraction</a></li>
+            <li><a href="#services" class="text-blue-300 hover:text-white text-sm transition-colors">→ Gum Treatment</a></li>
+            <li><a href="#services" class="text-blue-300 hover:text-white text-sm transition-colors">→ Full Mouth Rehabilitation</a></li>
+            <li><a href="#services" class="text-blue-300 hover:text-white text-sm transition-colors">→ Dentures</a></li>
+            <li><a href="#services" class="text-blue-300 hover:text-white text-sm transition-colors">→ Teeth Sensitivity Treatment</a></li>
+            <li><a href="#services" class="text-blue-300 hover:text-white text-sm transition-colors">→ Dental X-Ray & Diagnosis</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="font-bold text-white mb-4 text-sm uppercase tracking-wider">Quick Links</h4>
+          <ul class="space-y-2">
+            <li><a href="#home" class="text-blue-300 hover:text-white text-sm transition-colors">→ Home</a></li>
+            <li><a href="#services" class="text-blue-300 hover:text-white text-sm transition-colors">→ Services</a></li>
+            <li><a href="#about" class="text-blue-300 hover:text-white text-sm transition-colors">→ About Us</a></li>
+            <li><a href="#reviews" class="text-blue-300 hover:text-white text-sm transition-colors">→ Patient Reviews</a></li>
+            <li><a href="#contact" class="text-blue-300 hover:text-white text-sm transition-colors">→ Contact Us</a></li>
+            <li><a href="#home" class="text-blue-300 hover:text-white text-sm transition-colors">→ Book Appointment</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="font-bold text-white mb-4 text-sm uppercase tracking-wider">Contact Info</h4>
+          <div class="space-y-4">
+            <div class="flex gap-3">
+              <i data-lucide="map-pin" class="w-4 h-4 text-blue-400 flex-shrink-0 mt-0.5"></i>
+              <p class="text-blue-300 text-sm">Near Arien Bakery, Devi Colony,<br />Bank Colony, Bidar,<br />Karnataka – 585401</p>
+            </div>
+            <div class="flex gap-3">
+              <i data-lucide="phone" class="w-4 h-4 text-blue-400 flex-shrink-0 mt-0.5"></i>
+              <div>
+                <a href="tel:07892581667" class="text-white font-semibold hover:text-blue-300 transition-colors">078925 81667</a><br/>
+                <a href="tel:09964416060" class="text-white font-semibold hover:text-blue-300 transition-colors">996441 6060</a>
+              </div>
+            </div>
+            <div class="flex gap-3">
+              <i data-lucide="clock" class="w-4 h-4 text-blue-400 flex-shrink-0 mt-0.5"></i>
+              <div class="text-blue-300 text-sm">
+                <p>Morning: 10:00 AM – 12:00 PM</p>
+                <p>Evening: 6:00 PM – 9:00 PM</p>
+                <p class="text-green-400 font-semibold mt-1">Open 7 Days a Week</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="border-t border-blue-800 py-6">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-3">
+        <p class="text-blue-400 text-sm text-center">
+          © <span id="year"></span> Arpita Dental Clinic & Implant Centre, Bidar. All rights reserved.
+        </p>
+        <p class="text-blue-500 text-xs text-center">
+          Best Dental Clinic in Bidar · Root Canal Specialist · Dental Implants · Braces · Aligners
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
