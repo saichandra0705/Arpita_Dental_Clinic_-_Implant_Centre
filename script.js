@@ -15,6 +15,24 @@ document.addEventListener("DOMContentLoaded", () => {
   } catch (err) { console.error('Year set failed:', err); }
 
   // ==========================================
+  // EmailJS Setup
+  // ==========================================
+  // 1. Sign in at https://dashboard.emailjs.com
+  // 2. Email Services -> your connected Gmail service -> copy its "Service ID"
+  //    (looks like "service_xxxxxxx") and paste it below as EMAILJS_SERVICE_ID.
+  // 3. Account -> General -> "Public Key" -> paste below as EMAILJS_PUBLIC_KEY.
+  // 4. Template ID is already set from your Contact Us template.
+  const EMAILJS_PUBLIC_KEY  = "Qyy6FItcAzcqaIRyh";      // <-- from EmailJS Account > API Keys
+  const EMAILJS_SERVICE_ID  = "service_74bb6i4";       // <-- from EmailJS Email Services (Gmail: arpitadentalimplants@gmail.com)
+  const EMAILJS_TEMPLATE_ID = "template_ximvl4a";      // Contact Us template
+
+  try {
+    if (typeof emailjs !== 'undefined') {
+      emailjs.init({ publicKey: EMAILJS_PUBLIC_KEY });
+    }
+  } catch (err) { console.error('EmailJS init failed:', err); }
+
+  // ==========================================
   // Interactive Hero Background Tracking
   // ==========================================
   try {
@@ -54,6 +72,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const mobileBtn = document.getElementById('mobile-menu-btn');
     const mobileMenu = document.getElementById('mobile-menu');
     const mobileLinks = document.querySelectorAll('.mobile-link');
+    const topBar = document.getElementById('top-bar');
 
     if (navbar && navTitle && navSubtitle && mobileBtn) {
       window.addEventListener('scroll', () => {
@@ -69,6 +88,10 @@ document.addEventListener("DOMContentLoaded", () => {
               link.classList.replace('hover:text-white', 'hover:text-blue-700');
             });
           }
+          // Collapse the top utility bar out of view once scrolled, and
+          // pull the navbar up to sit flush at the top of the page.
+          if (topBar) topBar.style.transform = 'translateY(-100%)';
+          navbar.style.top = '0px';
         } else {
           navbar.classList.replace('bg-white', 'bg-transparent');
           navbar.classList.remove('shadow-lg');
@@ -81,9 +104,14 @@ document.addEventListener("DOMContentLoaded", () => {
               link.classList.replace('hover:text-blue-700', 'hover:text-white');
             });
           }
+          if (topBar) topBar.style.transform = 'translateY(0)';
+          navbar.style.top = '';
         }
       });
     }
+
+    if (topBar) topBar.style.transition = 'transform 0.3s ease';
+    if (navbar) navbar.style.transition = 'top 0.3s ease, background-color 0.3s ease';
 
     if (mobileBtn && mobileMenu) {
       mobileBtn.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
@@ -93,23 +121,59 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   } catch (err) { console.error('Navbar logic failed:', err); }
 
-  // 4. Form Submission Simulation
+  // 4. Appointment Form Submission via EmailJS
   try {
     const form = document.getElementById('appointment-form');
     const formSuccess = document.getElementById('form-success');
+    const formError = document.getElementById('form-error');
+    const submitBtn = document.getElementById('appointment-submit-btn');
 
     if (form && formSuccess) {
       form.addEventListener('submit', (e) => {
         e.preventDefault();
-        form.classList.add('hidden');
-        formSuccess.classList.remove('hidden');
-        formSuccess.classList.add('flex');
-        setTimeout(() => {
-          form.reset();
-          formSuccess.classList.add('hidden');
-          formSuccess.classList.remove('flex');
-          form.classList.remove('hidden');
-        }, 4000);
+        if (formError) { formError.classList.add('hidden'); formError.textContent = ''; }
+
+        if (typeof emailjs === 'undefined') {
+          console.error('EmailJS SDK not loaded.');
+          if (formError) {
+            formError.textContent = 'Sorry, something went wrong sending your request. Please call us directly.';
+            formError.classList.remove('hidden');
+          }
+          return;
+        }
+
+        if (submitBtn) {
+          submitBtn.disabled = true;
+          submitBtn.textContent = 'Sending...';
+        }
+
+        emailjs.sendForm(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, form)
+          .then(() => {
+            form.classList.add('hidden');
+            formSuccess.classList.remove('hidden');
+            formSuccess.classList.add('flex');
+            setTimeout(() => {
+              form.reset();
+              formSuccess.classList.add('hidden');
+              formSuccess.classList.remove('flex');
+              form.classList.remove('hidden');
+              if (submitBtn) {
+                submitBtn.disabled = false;
+                submitBtn.textContent = 'Confirm Appointment →';
+              }
+            }, 5000);
+          })
+          .catch((error) => {
+            console.error('EmailJS send failed:', error);
+            if (formError) {
+              formError.textContent = 'Sorry, we couldn\'t send your request. Please call us at 078925 81667.';
+              formError.classList.remove('hidden');
+            }
+            if (submitBtn) {
+              submitBtn.disabled = false;
+              submitBtn.textContent = 'Confirm Appointment →';
+            }
+          });
       });
     }
   } catch (err) { console.error('Form logic failed:', err); }
