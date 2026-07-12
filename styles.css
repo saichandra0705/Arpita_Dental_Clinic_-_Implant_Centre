@@ -2,32 +2,29 @@
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
 
-/* Custom Utilities that Tailwind CDN doesn't immediately grasp */
+/* Custom Utilities */
 .hero-gradient { background: linear-gradient(135deg, #042f2e 0%, #0d7a72 40%, #14b8a6 100%); }
 
-.card-hover { transition: transform 0.3s ease, box-shadow 0.3s ease; }
-.card-hover:hover { transform: translateY(-6px); box-shadow: 0 20px 40px rgba(13, 122, 114, 0.15); }
-
-/* Form Styles */
+/* --- Form Styles (Color-matched to Blue Theme) --- */
 .form-input {
   width: 100%;
   padding: 0.75rem 1rem;
-  border: 1.5px solid #d1faf5;
+  border: 1.5px solid #bfdbfe; /* Tailwind blue-200 */
   border-radius: 8px;
-  background: rgba(255,255,255,0.95);
-  color: #1a2e2b;
+  background: rgba(255, 255, 255, 0.95);
+  color: #1e3a8a; /* Tailwind blue-900 */
   font-family: 'DM Sans', sans-serif;
   font-size: 0.9rem;
   outline: none;
   transition: border-color 0.2s, box-shadow 0.2s;
 }
 .form-input:focus {
-  border-color: #0d7a72;
-  box-shadow: 0 0 0 3px rgba(13, 122, 114, 0.1);
+  border-color: #2563eb; /* Tailwind blue-600 */
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
 }
 .form-input::placeholder { color: #94a3b8; }
 
-/* Navbar links hover state */
+/* --- Navbar links hover state --- */
 .nav-link { position: relative; }
 .nav-link::after {
   content: '';
@@ -36,25 +33,84 @@ html { scroll-behavior: smooth; }
   left: 0;
   width: 0;
   height: 2px;
-  background: #14b8a6;
+  background: #3b82f6; /* Tailwind blue-500 */
   transition: width 0.3s ease;
 }
 .nav-link:hover::after { width: 100%; }
 
-/* Pulse Animation for CTA Buttons */
-@keyframes pulse-teal {
-  0%, 100% { box-shadow: 0 0 0 0 rgba(20, 184, 166, 0.4); }
-  50% { box-shadow: 0 0 0 12px rgba(20, 184, 166, 0); }
+/* --- Pulse Animation for CTA Buttons --- */
+@keyframes pulse-blue {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(37, 99, 235, 0.4); }
+  50% { box-shadow: 0 0 0 12px rgba(37, 99, 235, 0); }
 }
-.pulse-btn { animation: pulse-teal 2.5s infinite; }
+.pulse-btn { animation: pulse-blue 2.5s infinite; }
 
-/* Custom Scroll Reveal Animation (Replaces Framer Motion) */
+/* --- Card Hover Effects --- */
+.card-hover { 
+  transition: transform 0.4s ease, box-shadow 0.4s ease, border-color 0.4s ease; 
+}
+.card-hover:hover { 
+  transform: translateY(-8px); 
+  box-shadow: 0 20px 25px -5px rgba(29, 78, 216, 0.1), 0 8px 10px -6px rgba(29, 78, 216, 0.1);
+  border-color: #bfdbfe; 
+}
+
+/* --- Scroll Reveal Animation --- */
+/* (Updated to .active to match the JavaScript logic) */
 .scroll-reveal {
   opacity: 0;
-  transform: translateY(30px);
-  transition: all 0.7s ease-out;
+  transform: translateY(40px);
+  transition: all 0.8s cubic-bezier(0.5, 0, 0, 1);
 }
-.scroll-reveal.in-view {
+.scroll-reveal.active {
   opacity: 1;
   transform: translateY(0);
+}
+
+/* =========================================
+   NEW: HERO SECTION ANIMATIONS & EFFECTS
+   ========================================= */
+
+/* --- Interactive Mouse Tracking Gradient --- */
+.interactive-hero-bg {
+  /* Default dark blue fallback */
+  background-color: #020617; 
+  /* The radial gradient centers on the --x and --y variables controlled by JS */
+  background-image: radial-gradient(
+    circle 800px at var(--mouse-x, 50%) var(--mouse-y, 50%),
+    #1d4ed8 0%,     /* Bright blue center */
+    #1e3a8a 30%,    /* Mid blue */
+    #0f172a 70%,    /* Dark navy */
+    #020617 100%    /* Almost black edge */
+  );
+  transition: background-image 0.4s ease-out;
+}
+
+/* --- Floating Orbs Animation --- */
+@keyframes blob {
+  0% { transform: translate(0px, 0px) scale(1); }
+  33% { transform: translate(30px, -50px) scale(1.1); }
+  66% { transform: translate(-20px, 20px) scale(0.9); }
+  100% { transform: translate(0px, 0px) scale(1); }
+}
+
+.animate-blob {
+  animation: blob 7s infinite;
+}
+
+.animation-delay-2000 {
+  animation-delay: 2s;
+}
+
+.animation-delay-4000 {
+  animation-delay: 4s;
+}
+
+/* --- Subtitle Fade-in --- */
+@keyframes fadeInText {
+  0% { opacity: 0; transform: translateY(10px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+.fade-in-text {
+  animation: fadeInText 1.5s ease-out forwards;
 }
